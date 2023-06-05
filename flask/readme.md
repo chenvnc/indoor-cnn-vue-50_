@@ -1,17 +1,8 @@
-## <span id='bao'>项目python主要下载的包</span>
-*没有以下的包可能会导致后端运行失败，导致部分页面展示不了*
+## 配置
 
-**flask框架  ```pip install flask```**
+**Python:**`flask pytorch torchvision pillow nbformat pandas`或者创建新的虚拟环境把`flask/requirements.txt`直接`pip install -r requirements.txt`
 
-**pytorch  `pip install torch`**
-
-**torchvision  `pip install torchvision`**
-
-**Pillow  `pip install pillow`**
-
-**nbformat  `pip install nbformat`**
-
-**pandas  `pip install pandas`**
+**vue:** 终端进入`sdxx-web/`文件夹直接输入`npm install`自动安装依赖
 
 ## 文件结构
 有三个文件夹分别为`flask,flask-dist,sdxx-web`
@@ -30,6 +21,8 @@ flask 后端文件夹
     -- imageClass.py 文件为主要调用的函数和Class
 
     -- readme.md 说明性文件
+
+    -- requirements.txt 项目所需的包
 
     -- run.py 文件为主要运行程序
 
@@ -63,7 +56,6 @@ sdxx-web  前端vue项目文件夹
 **运行：**
 * `/flask`文件夹下的`run.py`文件直接运行,浏览器打开终端显示的地址，也可直接显示前端页面并成功响应(flask以连接静态文件)
 * 也可以运行完`run.py`文件后不打开它显示的地址,在终端进入`/sdxx-web`文件夹输入命令`npm run dev`进行vue前端打开,也能实现显示页面并成功显示
-> 上述运行操作都需要下载[python](#bao)包
 
 ## 前端打包
 需进`/sdxx-web/src/js/message.js`修改`http`函数里的`url`就可以实现前端打包并可以连后端
